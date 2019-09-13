@@ -30,8 +30,8 @@ These instructions give you guidelines for preparing papers for AIAA Technical P
 
 {\renewcommand\arraystretch{1.0}
 \noindent\begin{longtable*}{@{}l @{\quad=\quad} l@{}}
-$A$  & amplitude of oscillation \\
-$a$ &    cylinder diameter \\
+$CV$  & crystal violet, $C_{25}N_{3}H_{30}Cl$ \\
+$A$ &   \% absorbance \\
 $C_p$& pressure coefficient \\
 $Cx$ & force coefficient in the \textit{x} direction \\
 $Cy$ & force coefficient in the \textit{y} direction \\
@@ -51,13 +51,42 @@ $K$  & trailing-edge (TE) nondimensional angular deflection rate
 
 Authors using \url{https://www.overleaf.com} may simply open the AIAA template from the Overleaf gallery to work online; no local installation of any files is required. Authors using a local \LaTeX{} installation will need to open the template in Overleaf and use the ``Download as zip'' option from the project menu to download a local copy of the template files. To create your formatted manuscript, type your own text over sections of the template, or cut and paste from another document and then use the available markup styles. Note that special formatting such as subscripts, superscripts, and italics may be lost when you copy your text into the template from a Word Processing program such as Microsoft Word. See Sec. V for more detailed formatting guidelines.
 
-\section{Procedure for Paper Submission}
+\section{Data Presentation}
 
-All manuscripts are to be submitted electronically to the ScholarOne Abstracts site created for each conference. The manuscript upload will be enabled several weeks after acceptance notices have been sent. Presenting authors of accepted papers will receive an email with instructions when manuscript submission is open. It is important that presenting authors keep their email addresses up-to- date so they do not miss this notice.
+\begin{table}[h]
+    \caption{\label{tab:table1} Rate order of $CV$ }
+    \centering
+    \begin{tabular}{cccccccc}
+        \hline
+        Trial (\#) & [$CV$] (M) & Delay ($s$) & Time ($s$) & Slope ($A$ / Time ($s$)) & Initial ($A$) & R       & RMSE   \\\hline
+        1          & 1.00       & 15.71       & 318.1      & $-4.58 \cdot 10^{4}$     & 33.0          & -0.978 & 0.00895 \\
+        2          & 1.00       & 15.44       & 317.5      & $-3.49 \cdot 10^{4}$     & 28.9          & -0.996 & 0.00275 \\
+        3          & 0.50       & 14.07       & 333.7      & $-1.09 \cdot 10^{4}$     & 22.4          & -0.970 & 0.00263 \\
+        4          & 0.25       & 18.48       & 319.3      & $-6.33 \cdot 10^{5}$     &  7.8          & -0.999 & 0.00030 \\
+        5          & 0.50       & 15.10       & 326.9      & $-1.33 \cdot 10^{4}$     & 25.9          & -0.934 & 0.00479 \\
+        6          & 0.25       & 20.06       & 257.8      &                          &               &        &         \\
+        7          & 0.33       & 17.97       & 301.8      & $-6.75 \cdot 10^{5}$     &  8.4          & -0.998 & 0.00035 \\
+        8          & 0.25       & 17.80       & 329.3      & $-9.59 \cdot 10^{5}$     &  7.2          & -0.997 & 0.00072 \\
+        9          & 0.25       & 18.97       & 328.0      & $-8.15 \cdot 10^{5}$     & 11.5          & -0.987 & 0.00125 \\
+        10         & 0.33       & 21.13       & 304.0      &                          &               &        &         \\
+        11         & 1.00       & 14.41       & 288.1      &                          &               &        &         \\
+        \hline
+    \end{tabular}
+\end{table}
 
-Before completing manuscript submission, submitters must also select the copyright statement that will appear on the paper, and complete other acknowledgments. It is also necessary to click both the ``Accept'' and ``Save'' buttons to complete a submission. All completed manuscript submission will be confirmed by email. Completed submissions will also have a status of ``Accepted'' at the top of your manuscript submission page.
-
-All files must be in pdf format. Please be sure that all security settings are removed from the pdf file before uploading to ensure proper processing of your manuscript file.
+\begin{table}[h]
+    \caption{\label{tab:table2} Calibration of $CV$ }
+    \centering
+    \begin{tabular}{ccc}
+        \hline
+        Trial (\#) & [$CV$] (M) & $A$   \\\hline
+        1          & 0.25       & 0.206 \\
+        2          & 0.33       & 0.418 \\
+        3          & 0.33       & 0.452 \\
+        4          & 1.00       & 0.610 \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \section{General Guidelines}
 
@@ -156,22 +185,6 @@ References should be cited according to the standard publication reference style
 All artwork, captions, figures, graphs, and tables will be reproduced exactly as submitted. Be sure to position any figures, tables, graphs, or pictures as you want them printed. AIAA will not be responsible for incorporating your figures, tables, etc. (Company logos and identification numbers are not permitted on your illustrations.)
 
 Do not insert your tables and figures in text boxes. Figures should have no background, borders, or outlines. In the \LaTeX{} template, use the ``caption'' command to type caption text. Captions are bold with a single tab (no hyphen or other character) between the figure number and figure description.
-
-% \begin{table}
-% \caption{\label{tab:table1} Transitions selected for thermometry}
-% \centering
-% \begin{tabular}{lcccccc}
-% \hline
-% & Transition& & \multicolumn{2}{c}{}\\\cline{2-2}
-% Line& $\nu''$& & $J'' $& Frequency, cm$^{-1}$& $FJ$, cm$^{-1}$& $G\nu $, cm$^{-1}$\\\hline
-% a& 0& P$_{12}$& 2.5& 44069.416& 73.58& 948.66\\
-% b& 1& R$_{2}$& 2.5& 42229.348& 73.41& 2824.76\\
-% c& 2& R$_{21}$& 805& 40562.179& 71.37& 4672.68\\
-% d& 0& R$_{2}$& 23.5& 42516.527& 1045.85& 948.76\\
-% \hline
-% \end{tabular}
-% \end{table}
-
 
 \begin{figure}[hbt!]
 \centering
