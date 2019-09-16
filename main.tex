@@ -58,18 +58,18 @@ Authors using \url{https://www.overleaf.com} may simply open the AIAA template f
     \centering
     \begin{tabular}{cccccccc}
         \hline
-        Trial (\#) & [$CV$] (M) & Delay ($s$) & Time ($s$) & Slope ($A$ / Time ($s$)) & Initial ($A$) & R       & RMSE   \\\hline
-        1          & 1.00       & 15.71       & 318.1      & $-4.58 \cdot 10^{4}$     & 33.0          & -0.978 & 0.00895 \\
-        2          & 1.00       & 15.44       & 317.5      & $-3.49 \cdot 10^{4}$     & 28.9          & -0.996 & 0.00275 \\
-        3          & 0.50       & 14.07       & 333.7      & $-1.09 \cdot 10^{4}$     & 22.4          & -0.970 & 0.00263 \\
-        4          & 0.25       & 18.48       & 319.3      & $-6.33 \cdot 10^{5}$     &  7.8          & -0.999 & 0.00030 \\
-        5          & 0.50       & 15.10       & 326.9      & $-1.33 \cdot 10^{4}$     & 25.9          & -0.934 & 0.00479 \\
-        6          & 0.25       & 20.06       & 257.8      &                          &               &        &         \\
-        7          & 0.33       & 17.97       & 301.8      & $-6.75 \cdot 10^{5}$     &  8.4          & -0.998 & 0.00035 \\
-        8          & 0.25       & 17.80       & 329.3      & $-9.59 \cdot 10^{5}$     &  7.2          & -0.997 & 0.00072 \\
-        9          & 0.25       & 18.97       & 328.0      & $-8.15 \cdot 10^{5}$     & 11.5          & -0.987 & 0.00125 \\
-        10         & 0.33       & 21.13       & 304.0      &                          &               &        &         \\
-        11         & 1.00       & 14.41       & 288.1      &                          &               &        &         \\
+        Trial (\#) & [$CV$] (M) & Delay ($s$) & Time ($s$) & Slope ($A$ / Time ($s$)) & Initial (\%$A$) & R       & RMSE   \\\hline
+        1          & 1.00       & 15.71       & 318.1      & $-4.58 \cdot 10^{-4}$    & 33.0          & -0.978 & 0.00895 \\
+        2          & 1.00       & 15.44       & 317.5      & $-3.49 \cdot 10^{-4}$    & 28.9          & -0.996 & 0.00275 \\
+        3          & 0.50       & 14.07       & 333.7      & $-1.09 \cdot 10^{-4}$    & 22.4          & -0.970 & 0.00263 \\
+        4          & 0.25       & 18.48       & 319.3      & $-6.33 \cdot 10^{-5}$    &  7.8          & -0.999 & 0.00030 \\
+        5          & 0.50       & 15.10       & 326.9      & $-1.33 \cdot 10^{-4}$    & 25.9          & -0.934 & 0.00479 \\
+        %6          & 0.25       & 20.06       & 257.8      &                          &               &        &         \\
+        6          & 0.33       & 17.97       & 301.8      & $-6.75 \cdot 10^{-5}$    &  8.4          & -0.998 & 0.00035 \\
+        7          & 0.25       & 17.80       & 329.3      & $-9.59 \cdot 10^{-5}$    &  7.2          & -0.997 & 0.00072 \\
+        8          & 0.25       & 18.97       & 328.0      & $-8.15 \cdot 10^{-5}$    & 11.5          & -0.987 & 0.00125 \\
+        %10         & 0.33       & 21.13       & 304.0      &                          &               &        &         \\
+        %11         & 1.00       & 14.41       & 288.1      &                          &               &        &         \\
         \hline
     \end{tabular}
 \end{table}
@@ -79,14 +79,94 @@ Authors using \url{https://www.overleaf.com} may simply open the AIAA template f
     \centering
     \begin{tabular}{ccc}
         \hline
-        Trial (\#) & [$CV$] (M) & $A$   \\\hline
-        1          & 0.25       & 0.206 \\
-        2          & 0.33       & 0.418 \\
-        3          & 0.33       & 0.452 \\
-        4          & 1.00       & 0.610 \\
+        Trial (\#) & [$CV$] (M) & Initial (\%$A$)   \\\hline
+        1          & 0.25       & 20.6 \\
+        2          & 0.33       & 41.8 \\
+        3          & 0.33       & 45.2 \\
+        4          & 1.00       & 61.0 \\
         \hline
     \end{tabular}
 \end{table}
+
+\begin{table}[h]
+    \caption{\label{tab:table1} Rate order of $OH^{-}$ }
+    \centering
+    \begin{tabular}{cccccccc}
+        \hline
+        Trial (\#) & [$OH^{-}$] (M) & Delay ($s$) & Time ($s$) & Slope ($A$ / Time ($s$)) & Initial (\%$A$) & R       & RMSE   \\\hline
+        1          & 1.00       & 22.6       &       & $-7.50 \cdot 10^{-4}$    &           &  &  \\
+        2          & 1.00       & 20.0       &       & $-4.01 \cdot 10^{-4}$    &           &  &  \\
+        3          & 0.25       & 10.4       &       & $-1.62 \cdot 10^{-4}$    &           &  &  \\
+        4          & 0.25       & 11.7       &       & $-1.49 \cdot 10^{-4}$    &           &  &  \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Method of initial rates.
+\begin{equation}
+    \label{sample:equation}
+    \frac{rate_{1}}{rate_{2}} = \frac{k[CV]^{x}_{1}[OH^{-}]^{y}_{1}}{k[CV]^{x}_{2}[OH^{-}]^{y}_{2}}
+\end{equation}
+
+\begin{equation}
+    \label{sample:equation}
+    \frac{rate_{1}}{rate_{2}} = \frac{[CV]^{x}_{1}}{[CV]^{x}_{2}}
+\end{equation}
+
+1.00M:0.25M $CV$
+(Average slopes of each)
+
+\begin{equation}
+    \label{sample:equation}
+    \frac{-4.04 \cdot 10^{-4}}{-8.02 \cdot 10^{-5}} = \frac{1.00^{x}}{0.25^{x}}
+\end{equation}
+
+\begin{equation}
+    \label{sample:equation}
+    5.04 = 4.0^{x}
+\end{equation}
+
+\begin{equation}
+    \label{sample:equation}
+    x = \frac{ln{(5.04)}}{ln{(4.0)}} = 1.2
+\end{equation}
+
+1.2 is closest to the integer 1, therefore the rate order of $CV$ is 1.
+\newpage
+1.00M:0.25M $OH^{-}$
+(Average slopes of each)
+
+\begin{equation}
+    \label{sample:equation}
+    \frac{-5.76 \cdot 10^{-4}}{-1.56 \cdot 10^{-4}} = \frac{1.00^{x}}{0.25^{x}}
+\end{equation}
+
+\begin{equation}
+    \label{sample:equation}
+    3.69 = 4.0^{x}
+\end{equation}
+
+\begin{equation}
+    \label{sample:equation}
+    x = \frac{ln{(3.69)}}{ln{(4.0)}} = 0.94
+\end{equation}
+
+0.94 is closest to the integer 1, therefore the rate order of $OH^{-}$ is 1.
+\newpage
+\begin{equation}
+    \label{sample:equation}
+    rate_{1} = k[CV]_{1}[OH^{-}]_{1}
+\end{equation}
+
+\begin{equation}
+    \label{sample:equation}
+    -4.04 \cdot 10^{-4} = k(2.5 \cdot 10^{-5})(2.0 \cdot 10^{-2})
+\end{equation}
+
+\begin{equation}
+    \label{sample:equation}
+    \frac{-4.04 \cdot 10^{-4}}{5.0 \cdot 10^{-7}} = k = 
+\end{equation}
 
 \section{General Guidelines}
 
